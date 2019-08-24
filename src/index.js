@@ -1,7 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import App from './Components/App/App';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-ReactDOM.render(
-    <h1>Hello React - Webpack</h1>,
-    document.getElementById('root')
-);
+ReactDOM.render(<App/>, document.getElementById('root'));
