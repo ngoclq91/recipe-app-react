@@ -1,0 +1,23 @@
+{
+  "name": "recipe-app-react",
+  "description": "build a Recipe App With React",
+  "main": "index.js",
+  "authors": [
+    "ngoclq91 <ngocsonqs@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "recipe-app",
+    "reactjs",
+    "app"
+  ],
+  "homepage": "https://github.com/ngoclq91/recipe-app-react",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ]
+}
