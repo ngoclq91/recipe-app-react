@@ -1,16 +1,20 @@
 const path = require('path');
 
+/** các thư viện dependencies sẽ được output ra file vendor */
+const VENDOR_LIBS = ['react', 'react-dom'];
+
 module.exports = {
     mode : 'development',
     optimization: {
         minimize: true
     },
     entry : {
-        bundle : './src/index.js'
+        bundle : './src/index.js',
+        vendor: VENDOR_LIBS
     },
     output: {
-        filename : 'bundle.js',
         path : path.join(__dirname, 'dist'),
+        filename : '[name].js',
         publicPath: "/public/"
     },
     module: {
