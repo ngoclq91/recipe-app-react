@@ -2,6 +2,9 @@ const path = require('path');
 
 module.exports = {
     mode : 'development',
+    optimization: {
+        minimize: true
+    },
     entry : {
         bundle : './src/index.js'
     },
