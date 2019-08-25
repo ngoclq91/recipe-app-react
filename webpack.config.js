@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 /** các thư viện dependencies sẽ được output ra file vendor */
 const VENDOR_LIBS = ['react', 'react-dom'];
@@ -29,5 +30,11 @@ module.exports = {
                 test: /\.css$/
             }
         ]
-    }
+    },
+    optimization: {
+        splitChunks: {
+            name: 'vendor',
+            chunks: "initial",
+        }
+    },
 };
