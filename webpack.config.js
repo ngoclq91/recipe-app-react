@@ -1,4 +1,5 @@
 const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 /** các thư viện dependencies sẽ được output ra file vendor */
 const VENDOR_LIBS = ['react', 'react-dom'];
@@ -29,6 +30,12 @@ module.exports = {
             }
         ]
     },
+    plugins: [
+        new HTMLWebpackPlugin({
+            template: "src/index.html"
+        })
+    ],
+    stats: { children: false },
     optimization: {
         splitChunks: {
             name: 'vendor',
